@@ -12,6 +12,10 @@ var app;
             templateUrl: "/app/products/productDetailView.html",
             controller: "ProductDetailController as vm"
         })
+            .when("/pxtable", {
+            templateUrl: "/app/products/pxtable.html",
+            controller: "PxTableController as vm"
+        })
             .otherwise("/productList");
     }
 })(app || (app = {}));

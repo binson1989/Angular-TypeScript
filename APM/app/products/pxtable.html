@@ -1,0 +1,20 @@
+<link rel="import" href="../../bower_components/px-data-table/px-data-table.html" />
+
+<div class="panel panel-primary">
+    <div class="panel-heading" style="font-size:large">
+        {{::vm.title}}
+    </div>
+    <div class="panel-body">
+        <px-data-table sortable filterable table-data={{vm.data}}>
+            <px-data-table-column sortable filterable name="productName" label="Product Name">
+            </px-data-table-column>
+            <px-data-table-column sortable filterable name="description" label="Description">
+            </px-data-table-column>
+            <px-data-table-column sortable filterable type="html" label="Product Name">
+                <
+            </px-data-table-column>
+            <px-data-table-column sortable filterable name="price" label="Price">
+            </px-data-table-column>
+        </px-data-table>
+    </div>
+</div>
