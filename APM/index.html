@@ -1,25 +1,11 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-controller="MainController as m">
 <head lang="en">
     <meta charset="UTF-8">
     <title>Acme Product Management</title>
 
     <!-- Style sheets -->
     <link href="styles/bootstrap.css" rel="stylesheet" />
-</head>
-
-<body ng-controller="MainController">
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <div class="navbar-brand">Acme Product Management-{{message}}</div>
-            </div>
-        </div>
-    </nav>
-
-    <div class="container">
-        <ng-view></ng-view>
-    </div>
 
     <!-- Library Scripts -->
     <script src="scripts/angular.js"></script>
@@ -45,6 +31,22 @@
     <script src="app/products/productListController.js"></script>
     <script src="app/products/productDetailController.js"></script>
     <script src="app/products/pxTableController.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand">Acme Product Management-{{m.message}}</div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <ng-view></ng-view>
+    </div>
+
+    
 </body>
 
 </html>

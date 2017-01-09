@@ -39,6 +39,7 @@ var app;
         function MainController(config) {
             console.log('Constant value: ' + config);
             console.log('Controller initialized');
+            this.message = 'Hello World!!!';
         }
         MainController.$inject = ['config'];
         return MainController;

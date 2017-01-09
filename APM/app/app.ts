@@ -26,7 +26,7 @@ module app {
     function routeConfig($routeProvider: ng.route.IRouteProvider, config: any): void {
         console.log('inside route config...');
         console.log('Constant value: ' + config);
-        
+
         $routeProvider.when("/productList", {
             templateUrl: "/app/products/productListView.html",
             controller: "ProductListController as vm"
@@ -49,6 +49,7 @@ module app {
         constructor(config: any) {
             console.log('Constant value: ' + config);
             console.log('Controller initialized');
+            this.message = 'Hello World!!!';
         }
     }
 
