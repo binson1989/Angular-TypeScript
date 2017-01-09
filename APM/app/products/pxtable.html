@@ -6,15 +6,16 @@
     </div>
     <div class="panel-body">
         <px-data-table sortable filterable table-data={{vm.data}}>
-            <px-data-table-column sortable filterable name="productName" label="Product Name">
+            <px-data-table-column sortable filterable name="productName" label="Product Name"
+                filter-function-name="customFuncs.filterByName">
             </px-data-table-column>
             <px-data-table-column sortable filterable name="description" label="Description">
             </px-data-table-column>
             <px-data-table-column sortable filterable type="html" label="Product Name">
-                <
             </px-data-table-column>
             <px-data-table-column sortable filterable name="price" label="Price">
             </px-data-table-column>
         </px-data-table>
     </div>
-</div>
+<p><a target="_blank" href="http://blog.backand.com/ng-grid-and-a-simple-rest-api/">Back to the article</a></p>
+<p><a target="_blank" href="https://www.backand.com/apps/#/sign_up">Create your own backend</a></p>

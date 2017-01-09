@@ -18,6 +18,8 @@ var app;
             Product.prototype.calculateDiscount = function (percent) {
                 return this.price - (this.price * percent / 100);
             };
+            Product.prototype.filterByName = function (searchString, cellValue) {
+            };
             return Product;
         }());
         domain.Product = Product;

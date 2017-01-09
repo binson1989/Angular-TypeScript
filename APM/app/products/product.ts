@@ -27,5 +27,9 @@ module app.domain {
         calculateDiscount(percent: number) : number {
             return this.price - (this.price * percent/100);
         }
+
+        filterByName(searchString, cellValue) {
+
+        }
     }
 }
